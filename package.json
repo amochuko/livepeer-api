@@ -1,0 +1,48 @@
+{
+  "name": "livepeer-api",
+  "version": "1.0.0",
+  "description": "A simple stand in sdk for the official livepeer sdk",
+  "main": "src/index.ts",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "npm run build && node ./dist/index.js",
+    "lint": "npx eslint . --ext .js,.ts",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "keywords": [],
+  "author": "ochuko awhe ",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "tus-js-client": "^4.1.0",
+    "zod": "^3.23.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amochuko/livepeer-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amochuko/livepeer-api/issues"
+  },
+  "homepage": "https://github.com/amochuko/livepeer-api",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "@eslint/js": "^9.2.0",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  }
+}
